@@ -3,6 +3,7 @@ version: "2.1"
 services:
   mariadb:
     image: "bitnami/mariadb:latest"
+    container_name: mariadb
     ports:
       - "3306:3306"
     volumes:
@@ -11,6 +12,7 @@ services:
       - ALLOW_EMPTY_PASSWORD=yes
       - MARIADB_USER=docker
       - MARIADB_PASSWORD=password123
+      - MARIADB_PASSWORD_ROOT_PASSWORD=password123
     healthcheck:
       test: ["CMD", "/opt/bitnami/scripts/mariadb/healthcheck.sh"]
       interval: 15s

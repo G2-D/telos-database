@@ -2,8 +2,6 @@
 Telos database
 </h1>
 
-<hr />
-
 ## Começando
 
 1. Clone este repositório usando `git clone https://github.com/G2-D/telos-database.git`
